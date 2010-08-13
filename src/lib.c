@@ -115,8 +115,6 @@ char	*my_readstr(void)
 	while(((buff[i] = my_read()) != '\n') && i <= BUFSIZ)
 		++i;
 	buff[i] = '\0';
-	if (xrealloc(buff, my_strlen(buff) + 1) == NULL)
-		exit(EXIT_FAILURE);
 	return (buff);
 }
 

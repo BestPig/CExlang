@@ -265,7 +265,6 @@ void	instruction_33(Datas	*DataExec, int arg1, int arg2)
 {
 	char	*prompt;
 
-	prompt = xmalloc(BUFSIZ + 1, "Cannot allocate for reading string\n");
 	prompt = my_readstr();
 	if (my_strlen(prompt) == 0 || !is_numeric(prompt))
 		{
