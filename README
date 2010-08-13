@@ -1,0 +1,29 @@
+Un futur collègue d'Epitech (Exanis) à voulu relever un petit défi, crée un langage de programmation dont le code source est stocké dans une image.
+
+Ce langage est nommé l'Exlang :).
+
+Le principe de ce langage est de se reposer sur des couleurs pour son code source.
+Chaque pixel de l'image est une instruction contenant 3 informations suivant sa valeur RGB.
+La valeur du rouge indique le numéro de l'instruction à Exécuter, la valeur du vert l'argument 1 de l'instruction, et la valeur du bleu l'argument 2.
+
+Le langage dans dans sa version 0.8 est composé d'un jeu de 43 instructions.
+On peut donc s'amuser à faire tout type de programme et uniquement avec Paint ;) (Pour les courageux).
+Mais Exanis à penser à vous qui n'aimer pas Paint, et à programmer une IDE, vous la trouverai ici.
+http://www.exlang.org/dist/IDE.zip (Cette IDE est en PHP, vous devez donc disposez d'un serveur web).
+
+Il existait 2 interpréteurs, un en PHP (La toute première version), et un autre en python.
+Ayant un peu de temps libre pendant les vacances, et voulant un peu travailler mon C, je me suis dit, pourquoi ne pas programmer un interpréteur en C, et c'est chose faite ;).
+http://www.bestpig.fr/files/cexlang.zip
+Dans cette archive il y a 3 binaires pré-compilés.
+- cexlang.exe (Exécutable pour Windows, il ne lit que les bmp, le bmp doit être en 24 bit
+- cexlang (Binaire pour Linux, il ne lit aussi que les bmp)
+- cexlang_opencv (Binaire pour Linux, il utilise la librairie 1.0 de opencv, ce qui lui permet de prendre en charge un peu tout les formats d'image).
+
+Il n'y à pas d'exécutable Windows utilisant opencv, pour la simple raison que opencv m'a fait chier pour Windows, mais il devrait être possible de le compiler.
+Les sources sont fournies dans le zip ainsi que 2 programmes d'exemple.
+- gamey.bmp (Jeu du plus ou moins codé par Exanis)
+- prime.bmp (Vous dit si le nombre entrée est un nombre premier, codé par Ikalou)
+
+Les liens officiels :
+http://www.exlang.org/
+http://www.tek0.epitech2015.eu/viewtopic.php?f=26&t=971
